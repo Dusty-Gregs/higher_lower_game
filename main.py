@@ -9,7 +9,7 @@ def clear_terminal():
 
 
 def format_data(account):
-    #Format the account data into a printable format
+    # Format the account data into a printable format
     account_name = account["name"]
     account_descr = account["description"]
     account_country = account["country"]
@@ -17,7 +17,7 @@ def format_data(account):
 
 
 def check_answer(guess, a_followers, b_followers):
-    #Take the user guess and follower counts and returns if they got it right.
+    # Take the user guess and follower counts and returns if they got it right.
     if a_followers > b_followers:
         return guess == "a"
     else:
@@ -66,7 +66,3 @@ while game_should_continue:
     else:
         game_should_continue = False
         print(f"Sorry, that's wrong. Final score: {score}.")
-
-
-
-    
